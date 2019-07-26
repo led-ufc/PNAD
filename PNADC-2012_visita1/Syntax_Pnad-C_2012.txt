@@ -1,5 +1,5 @@
 /*SINTAXE PARA IMPORTAÇÃO DOS DADOS PNAD CONTÍNUO 2012##
-/*OBSERVAÇÕES: todas as linhas cujos rótulos levam a uma resposta sem índice, tipo 'Não aplicável', está devolvendo um erro e assumindo um valor inválido. Checar no banco de dados as seguintes variáveis:V4012, V4009, V4006, V3013 e V3003##
+/*OBSERVAÇÕES: todas as linhas cujos rótulos levam a uma resposta sem índice, tipo 'Não aplicável', está devolvendo um erro e assumindo um valor inválido. Checar no banco de dados as seguintes variáveis:V4012, V4009, V4006, V3013 e V3003. Neste caso apenas o valor nulo, que resultaria em 'Não aplicável', está sendo eliminado durante a consulta.##
 
 DATA LIST FILE='...\DADOS\PNAD_C\2012\PNADC_2012_visita1_20190516\PNADC_2012_visita1_ 20190516.txt'FIXED/
 Ano	1-4
