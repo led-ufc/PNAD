@@ -203,8 +203,7 @@ Ano'Ano-Ano de referência'
 Trimestre'Trimestre-Trimestre de referência'
 UF'UF-Unidade da Federação'
 Capital'Capital-Município da Capital'
-RM_RIDE'RM_RIDE-Região Metropolitana e Região Administrativa Integrada
-de Desenvolvimento'
+RM_RIDE'RM_RIDE-Região Metropolitana e Região Administrativa Integrada de Desenvolvimento'
 UPA'UPA-Unidade Primária de Amostragem (UPA)'
 Estrato'Estrato-'
 V1008'V1008-Número de seleção do domicílio'
@@ -476,10 +475,8 @@ RM_RIDE
 13'Região Metropolitana de Manaus (AM)'
 15'Região Metropolitana de Belém (PA)'
 16'Região Metropolitana de Macapá (AP)'
-21'Região Metropolitana de Grande São
-Luís (MA)'
-22'Região Administrativa Integrada
-de Desenvolvimento da Grande Teresina (PI)'
+21'Região Metropolitana de Grande São Luís (MA)'
+22'Região Administrativa Integrada de Desenvolvimento da Grande Teresina (PI)'
 23'Região Metropolitana de Fortaleza (CE)'
 24'Região Metropolitana de Natal (RN)'
 25'Região Metropolitana de João Pessoa (PB)'
@@ -534,7 +531,7 @@ V2005
 VALUE LABELS
 V2007
 1'Masculino'
-2'Feminino'
+2'Feminino'.
 
 VALUE LABELS
 V2010
@@ -721,8 +718,8 @@ V4009
 3'Três ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V4010
+// VALUE LABELS
+// V4010
 
 VALUE LABELS
 V4012
@@ -741,8 +738,8 @@ V40121
 2'Em ajuda a empregado que era membro do domicílio'
 'Não aplicável'.
 
-VALUE LABELS
-V4013
+// VALUE LABELS
+// V4013
 
 VALUE LABELS
 V40132
