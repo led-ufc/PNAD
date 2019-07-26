@@ -1,3 +1,6 @@
+/*SINTAXE PARA IMPORTAÇÃO DOS DADOS PNAD CONTÍNUO 2012##
+/*OBSERVAÇÕES: todas as linhas cujos rótulos levam a uma resposta sem índice, tipo 'Não aplicável', está devolvendo um erro e assumindo um valor inválido. Checar no banco de dados as seguintes variáveis:V4012, V4009, V4006, V3013 e V3003. Neste caso apenas o valor nulo, que resultaria em 'Não aplicável', está sendo eliminado durante a consulta.##
+
 DATA LIST FILE='...\DADOS\PNAD_C\2012\PNADC_2012_visita1_20190516\PNADC_2012_visita1_ 20190516.txt'FIXED/
 Ano	1-4
 Trimestre	5
@@ -324,14 +327,10 @@ V405022'V405022-Valor estimado dos produtos e mercadorias que recebia normalment
 V40503'V40503-Recebia/fazia normalmente nesse trabalho secundário rendimento/retirada somente em benefícios'
 V4051'V4051-Qual foi o rendimento bruto que ... recebeu/fez  nesse trabalho secundário, no mês de referência? (variável auxiliar)'
 V40511'V40511-Recebeu/fez nesse trabalho secundário rendimento/retirada em dinheiro no mês de referência'
-V405111'V405111-Número da faixa do rendimento/retirada em dinheiro
-
-SM = Salário Mínimo'
+V405111'V405111-Número da faixa do rendimento/retirada em dinheiro SM = Salário Mínimo'
 V405112'V405112-Valor em dinheiro do rendimento mensal que recebeu nesse trabalho secundário no mês de referência'
 V40512'V40512-Recebeu/fez nesse trabalho secundário no mês de referencia, rendimento/retirada em produtos e mercadorias'
-V405121'V405121-Número da faixa do rendimento/retirada em produtos e mercadorias
-
-SM = Salário Mínimo'
+V405121'V405121-Número da faixa do rendimento/retirada em produtos e mercadorias SM = Salário Mínimo'
 V405122'V405122-Valor estimado dos produtos e mercadorias que recebia recebeu nesse trabalho secundário no mês de referência'
 V4052'V4052-A jornada normal desse trabalho secundário estava totalmente compreendida no período de 5 horas da manhã às 10 horas da noite?'
 V4053'V4053-A jornada normal desse trabalho secundário estava totalmente compreendida no período noturno de 10 horas da noite às 5 horas da manhã seguinte?'
@@ -339,27 +338,19 @@ V4056'V4056-Quantas horas ... trabalhava normalmente, por semana, nesse trabalho
 V4057'V4057-Era contribuinte de instituto de previdência por esse(s) outro(s) trabalho(s)?'
 V4058'V4058-Qual era o rendimento bruto mensal que ... recebia/fazia  normalmente nesse(s) outro(s) trabalho(s)? (variável auxiliar)'
 V40581'V40581-Recebia/fazia normalmente nesse(s) outro(s) trabalho(s)  rendimento/retirada em dinheiro'
-V405811'V405811-Número da faixa do rendimento/retirada em dinheiro
-
-SM = Salário Mínimo'
+V405811'V405811-Número da faixa do rendimento/retirada em dinheiro SM = Salário Mínimo'
 V405812'V405812-Valor em dinheiro do rendimento mensal que recebia normalmente nesse(s) outro(s) trabalho(s) '
 V40582'V40582-Recebia/fazia normalmente nesse(s) outro(s) trabalho(s)  rendimento/retirada em produtos e mercadorias'
-V405821'V405821-Número da faixa do rendimento/retirada em produtos e mercadorias
-
-SM = Salário Mínimo'
+V405821'V405821-Número da faixa do rendimento/retirada em produtos e mercadorias SM = Salário Mínimo'
 V405822'V405822-Valor estimado do produtos e mercadorias que recebia normalmente nesse(s) outro(s) trabalho(s) '
 V40583'V40583-Recebia/fazia normalmente nesse(s) outro(s) trabalho(s) rendimento/retirada somente em benefícios'
 V40584'V40584-Não remunerado nesse(s) outro(s) trabalho(s) '
 V4059'V4059-Qual foi o rendimento bruto que ... recebeu/fez  nesse(s) outro(s) trabalho(s), no mês de referência? (variável auxiliar)'
 V40591'V40591-Recebeu/fez nesse(s) outro(s) trabalho(s) rendimento/retirada em dinheiro no mês de referência'
-V405911'V405911-Número da faixa do rendimento/retirada em dinheiro
-
-SM = Salário Mínimo'
+V405911'V405911-Número da faixa do rendimento/retirada em dinheiro SM = Salário Mínimo'
 V405912'V405912-Valor em dinheiro do rendimento mensal que recebeu nesse(s) outro(s) trabalho(s) no mês de referência'
 V40592'V40592-Recebeu/fez nesse(s) outro(s) trabalhos no mês de referencia, rendimento/retirada em produtos e mercadorias'
-V405921'V405921-Número da faixa do rendimento/retirada em produtos e mercadorias
-
-SM = Salário Mínimo'
+V405921'V405921-Número da faixa do rendimento/retirada em produtos e mercadorias SM = Salário Mínimo'
 V405922'V405922-Valor estimado do produtos e mercadorias que recebia normalmente nesse(s) outro(s) trabalho(s) no mês de referência'
 V4062'V4062-Quantas horas ... trabalhava normalmente, por semana, nesse(s) outro(s) trabalho(s)? '
 V4063'V4063-... gostaria de trabalhar mais horas do que as ... (soma das horas declaradas nas variáveis VD4031, VD4032, VD4033) horas que efetivamente trabalhou no(s) trabalho(s) que tinha na semana de referência?'
@@ -718,8 +709,8 @@ V4009
 3'Três ou mais'
 'Não aplicável'.
 
-// VALUE LABELS
-// V4010
+/*VALUE LABELS
+/*V4010
 
 VALUE LABELS
 V4012
@@ -738,8 +729,8 @@ V40121
 2'Em ajuda a empregado que era membro do domicílio'
 'Não aplicável'.
 
-// VALUE LABELS
-// V4013
+/*VALUE LABELS
+/*V4013
 
 VALUE LABELS
 V40132
@@ -807,11 +798,11 @@ V40161
 5'5 empregados'
 'Não aplicável'.
 
-VALUE LABELS
-V40162
+/*VALUE LABELS
+/*V40162
 
-VALUE LABELS
-V40163
+/*VALUE LABELS
+/*V40163
 
 VALUE LABELS
 V4017
@@ -825,8 +816,8 @@ V40171
 2'6 ou mais sócios'
 'Não aplicável'.
 
-VALUE LABELS
-V401711
+/*VALUE LABELS
+/*V401711
 
 VALUE LABELS
 V4018
@@ -836,14 +827,14 @@ V4018
 4'51 ou mais pessoas'
 'Não aplicável'.
 
-VALUE LABELS
-V40181
+/*VALUE LABELS
+/*V40181
 
-VALUE LABELS
-V40182
+/*VALUE LABELS
+/*V40182
 
-VALUE LABELS
-V40183
+/*VALUE LABELS
+/*V40183
 
 VALUE LABELS
 V4019
@@ -956,8 +947,8 @@ V403311
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V403312
+/*VALUE LABELS
+/*V403312
 
 VALUE LABELS
 V40332
@@ -976,8 +967,8 @@ V403321
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V403322
+/*VALUE LABELS
+/*V403322
 
 VALUE LABELS
 V40333
@@ -1007,8 +998,8 @@ V403411
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V403412
+/*VALUE LABELS
+/*V403412
 
 VALUE LABELS
 V40342
@@ -1028,8 +1019,8 @@ V403421
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V403422
+/*VALUE LABELS
+/*V403422
 
 VALUE LABELS
 V4035
@@ -1043,8 +1034,8 @@ V4036
 2'Não'
 'Não aplicável'.
 
-VALUE LABELS
-V4039
+/*VALUE LABELS
+/*V4039
 
 VALUE LABELS
 V4040
@@ -1054,17 +1045,17 @@ V4040
 4'2 anos ou mais '
 'Não aplicável'.
 
-VALUE LABELS
-V40401
+/*VALUE LABELS
+/*V40401
 
-VALUE LABELS
-V40402
+/*VALUE LABELS
+/*V40402
 
-VALUE LABELS
-V40403
+/*VALUE LABELS
+/*V40403
 
-VALUE LABELS
-V4041
+/*VALUE LABELS
+/*V4041
 
 VALUE LABELS
 V4043
@@ -1084,8 +1075,8 @@ V40431
 3'Em ajuda a trabalhador doméstico'
 'Não aplicável'.
 
-VALUE LABELS
-V4044
+/*VALUE LABELS
+/*V4044
 
 VALUE LABELS
 V4045
@@ -1140,8 +1131,8 @@ V405011
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405012
+/*VALUE LABELS
+/*V405012
 
 VALUE LABELS
 V40502
@@ -1160,8 +1151,8 @@ V405021
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405022
+/*VALUE LABELS
+/*V405022
 
 VALUE LABELS
 V40503
@@ -1191,8 +1182,8 @@ V405111
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405112
+/*VALUE LABELS
+/*V405112
 
 VALUE LABELS
 V40512
@@ -1212,8 +1203,8 @@ V405121
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405122
+/*VALUE LABELS
+/*V405122
 
 VALUE LABELS
 V4052
@@ -1227,8 +1218,8 @@ V4053
 2'Não'
 'Não aplicável'.
 
-VALUE LABELS	
-V4056
+/*VALUE LABELS	
+/*V4056
 
 VALUE LABELS
 V4057
@@ -1258,8 +1249,8 @@ V405811
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405812
+/*VALUE LABELS
+/*V405812
 
 VALUE LABELS
 V40582
@@ -1278,8 +1269,8 @@ V405821
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405822
+/*VALUE LABELS
+/*V405822
 
 VALUE LABELS
 V40583
@@ -1313,8 +1304,8 @@ V405911	0'0'
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405912
+/*VALUE LABELS
+/*V405912
 
 VALUE LABELS
 V40592
@@ -1334,11 +1325,11 @@ V405921
 8'[20SM]+1 ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V405922
+/*VALUE LABELS
+/*V405922
 
-VALUE LABELS
-V4062
+/*VALUE LABELS
+/*V4062
 
 VALUE LABELS
 V4063
@@ -1399,14 +1390,14 @@ V4076
 4'2 anos ou mais'
 'Não aplicável'.
 
-VALUE LABELS
-V40761
+/*VALUE LABELS
+/*V40761
 
-VALUE LABELS
-V40762
+/*VALUE LABELS
+/*V40762
 
-VALUE LABELS
-V40763
+/*VALUE LABELS
+/*V40763
 
 VALUE LABELS
 V4077
@@ -1457,8 +1448,8 @@ VD2002
 16'Empregado(a) doméstico(a)'
 17'Parente do(a) empregado(a) doméstico(a)'.
 
-VALUE LABELS
-VD2003	
+/*VALUE LABELS
+/*VD2003	
 
 VALUE LABELS
 VD2004
