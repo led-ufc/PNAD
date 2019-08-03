@@ -5,3 +5,7 @@
 
 > ALTER TABLE name
 > SET SCHEMA new_schema
+
+To create a new Schema, use:
+
+> CREATE SCHEMA schema_name
