@@ -9,3 +9,7 @@
 To create a new Schema, use:
 
 > CREATE SCHEMA schema_name
+
+In case you need to change the Table's name for any reason, use the following Query:
+
+>ALTER TABLE table_name RENAME TO new_table_name; table_name
