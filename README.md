@@ -9,3 +9,12 @@
 To create a new Schema, use:
 
 > CREATE SCHEMA schema_name
+
+We suggest the user install the Anaconda (1.7.0) Platform, which includes the following packages to analyse the data under Python (3.7.4) environment and Jupyter Notebooks (6.0.0):
+
+- Numpy (1.16.4);
+- Pandas (0.25.0);
+- Psycopg2 (2.7.6.1);
+- MatPlotLib (3.1.0).
+
+Download Anaconda's latest version here:[https://www.anaconda.com/distribution/]
