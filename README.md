@@ -17,4 +17,4 @@ We suggest the user install the Anaconda (1.7.0) Platform, which includes the fo
 - Psycopg2 (2.7.6.1);
 - MatPlotLib (3.1.0).
 
-Download Anaconda's latest version here:[https://www.anaconda.com/distribution/]
+Download Anaconda's latest version here: https://www.anaconda.com/distribution/
