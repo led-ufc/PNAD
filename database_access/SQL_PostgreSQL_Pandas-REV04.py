@@ -9,7 +9,7 @@ database = input("Digite o nome do Banco de Dados a ser acessado:")
 postgresuser = input("Usuário:")
 postgrespassword = input("Senha:")
 hosts_ip = input("IP:")
-#conn_port = input("Porta:")
+conn_port = input("Porta:")
 
 
 # Connect the database
@@ -18,7 +18,7 @@ conn = psycopg2.connect(
     user = postgresuser,
     password = postgrespassword,
     host = hosts_ip,
-    port = 5432
+    port = conn_port
 )
 
 # Open cursor to perform database operations
