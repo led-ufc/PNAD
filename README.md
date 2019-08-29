@@ -2,18 +2,21 @@
 
 - After using the Syntax to send the data to the PostgreSQL database, the SPSS sends the table to the public schema.
 - To change the shema's table, you must use the following Query:
-
-> ALTER TABLE name SET SCHEMA new_schema
-
+```SQL
+ALTER TABLE name SET SCHEMA new_schema
+```
 - To create a new Schema, use:
-
-> CREATE SCHEMA schema_name
-
+```SQL
+CREATE SCHEMA schema_name
+```
 - In case you need to change the column's name, use:
 ```SQL
 ALTER TABLE table_name RENAME COLUMN column_NM TO column_name
 ```
+- Sometimes the data comes with a different type than it should be. To change that, use:
+```PostgreSQL
 
+```
 We suggest the user install the Anaconda (1.7.0) Platform, which includes the following packages to analyse the data under Python (3.7.4) environment and Jupyter Notebooks (6.0.0):
 
 - Numpy (1.16.4);
