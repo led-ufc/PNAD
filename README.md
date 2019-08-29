@@ -15,7 +15,7 @@ ALTER TABLE schema.table_name RENAME COLUMN column_NM TO column_name;
 ```
 - Sometimes the data comes with a different type than it should be. To change that, use:
 ```SQL
-ALTER TABLE schema.table_name ALTER COLUMN column_name TYPE numeric(10,2);
+ALTER TABLE schema.table_name ALTER COLUMN column_name TYPE integer;
 ```
 We suggest the user install the Anaconda (1.7.0) Platform, which includes the following packages to analyse the data under Python (3.7.4) environment and Jupyter Notebooks (6.0.0):
 
