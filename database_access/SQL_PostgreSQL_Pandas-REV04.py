@@ -4,13 +4,21 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 
+#Connection data:
+database = input("Digite o nome do Banco de Dados a ser acessado:")
+postgresuser = input("Usuário:")
+postgrespassword = input("Senha:")
+hosts_ip = input("IP:")
+conn_port = input("Porta:")
+
+
 # Connect the database
 conn = psycopg2.connect(
-    dbname = "database",
-    user = "postgresuser",
-    password = "postgrespassword",
-    host = "host's ip",
-    port = 5432
+    dbname = database,
+    user = postgresuser,
+    password = postgrespassword,
+    host = hosts_ip,
+    port = conn_port
 )
 
 # Open cursor to perform database operations
@@ -35,7 +43,7 @@ z = cur4.fetchall()
 
 d = {'id':x, 'cd_aponde':y, 'aa_km2':z}
 df = pd.DataFrame (data = d)
-print(df)
+df
 
 # Close comunication the database
 cur.close()
